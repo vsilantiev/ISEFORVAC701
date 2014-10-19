@@ -1,0 +1,11 @@
+set -loop_iteration_limit 1000
+run
+-ifn v6pcieDMA.prj
+-top v6pcieDMA
+-p xc7a200tfbg676-2
+-ofn v6pcieDMA.ngc
+-sd {c:/Users/vsilantiev/Documents/VACAC701new/ipcore_dir}
+-opt_mode speed
+-opt_level 1
+-lc auto
+-bufg 32

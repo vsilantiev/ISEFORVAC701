@@ -1,0 +1,59 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc7a200tfbg676-2 -dd _ngo -uc v6pcieDMA.ucf v6pcieDMA.edf
+
+Executing edif2ngd -quiet "v6pcieDMA.edf" "_ngo\v6pcieDMA.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Users/vsilantiev/Documents/VACAC701new/project_1/project_1.runs/impl_1/_ngo/
+v6pcieDMA.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "v6pcieDMA.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <NET "userclk_66MHz" IOSTANDARD =
+   LVCMOS18;> [v6pcieDMA.ucf(308)]: This constraint cannot be distributed from
+   the design objects matching 'NET "userclk_66MHz"' because those design
+   objects do not contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "LEDs_IO_pin[7]" IOSTANDARD =
+   LVCMOS18;> [v6pcieDMA.ucf(309)]: This constraint cannot be distributed from
+   the design objects matching 'NET "LEDs_IO_pin[7]"' because those design
+   objects do not contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem:119 - Constraint <NET "LEDs_IO_pin[5]" IOSTANDARD =
+   LVCMOS18;> [v6pcieDMA.ucf(311)]: This constraint cannot be distributed from
+   the design objects matching 'NET "LEDs_IO_pin[5]"' because those design
+   objects do not contain or drive any instances of the correct type.
+
+INFO:ConstraintSystem - The Period constraint <NET "userclk_200MHz_p" PERIOD =
+   200 MHz HIGH 50 %;> [v6pcieDMA.ucf(230)], is specified using the Net Period
+   method which is not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   3
+
+Total memory usage is 297020 kilobytes
+
+Writing NGD file "v6pcieDMA.ngd" ...
+Total REAL time to NGDBUILD completion: 1 min  8 sec
+Total CPU time to NGDBUILD completion:   31 sec
+
+Writing NGDBUILD log file "v6pcieDMA.bld"...

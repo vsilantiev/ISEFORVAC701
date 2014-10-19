@@ -1,0 +1,3 @@
+# Output products list for <v7_eb_fifo_counted_resized>
+v7_eb_fifo_counted_resized.xco
+v7_eb_fifo_counted_resized_flist.txt

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="8">
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a200tfbg676-2" LaunchPart="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="PlanAhead Defaults (XST defaults with hierarchy)" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1413729432">
+		<File Type="XST-NGC" Name="v6pcieDMA.ngc"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+		<File Type="XST-SRP" Name="v6pcieDMA.srp"/>
+		<File Type="PA-XST" Name="v6pcieDMA.xst"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+		<File Type="PA-XSTPRJ" Name="v6pcieDMA.prj"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+	</Run>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc7a200tfbg676-2" LaunchPart="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="ISE Defaults, including packing registers in IOs off" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1413729600">
+		<File Type="MAP-PSR" Name="v6pcieDMA.psr"/>
+		<File Type="PA-EDIF" Name="v6pcieDMA.edf"/>
+		<File Type="PAR-NCD" Name="v6pcieDMA_routed.ncd"/>
+		<File Type="PA-UCF" Name="v6pcieDMA.ucf"/>
+		<File Type="PAR-PAD" Name="v6pcieDMA_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="v6pcieDMA_routed.par"/>
+		<File Type="PAR-UNR" Name="v6pcieDMA_routed.unroutes"/>
+		<File Type="BG-BIT" Name="v6pcieDMA.bit"/>
+		<File Type="BG-DRC" Name="v6pcieDMA.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="v6pcieDMA.bgn"/>
+		<File Type="TRCE-TWR" Name="v6pcieDMA.twr"/>
+		<File Type="TRCE-TWX" Name="v6pcieDMA.twx"/>
+		<File Type="XDL-XDL" Name="v6pcieDMA_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="NGDB-NGD" Name="v6pcieDMA.ngd"/>
+		<File Type="NGDB-BLD" Name="v6pcieDMA.bld"/>
+		<File Type="MAP-NCD" Name="v6pcieDMA.ncd"/>
+		<File Type="MAP-PCF" Name="v6pcieDMA.pcf"/>
+		<File Type="MAP-MRP" Name="v6pcieDMA.mrp"/>
+		<File Type="MAP-MAP" Name="v6pcieDMA.map"/>
+	</Run>
+</Runs>
+
